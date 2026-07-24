@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เที่ยวเชียงใหม่ สไตล์สโลว์ไลฟ์</title>
+    <style>
+        /* การตั้งค่า CSS พื้นฐาน */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* ส่วนหัวเว็บไซต์ (Header) */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* ส่วนเนื้อหา (Content) */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 10px;
+        }
+        p {
+            text-indent: 2em;
+            text-align: justify;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            justify-content: space-between;
+        }
+        .image-gallery img {
+            width: 32%;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            height: 200px;
+        }
+        .highlight-list {
+            background-color: #e8f8f5;
+            padding: 20px 40px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* ระบบแสดงความคิดเห็น (Comment Section) */
+        .comment-section {
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        .comment-form button {
+            width: 150px;
+            padding: 10px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .comment-form button:hover {
+            background-color: #16a085;
+        }
+        .comment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .comment-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #1abc9c;
+            border-radius: 4px;
+        }
+        .comment-box h4 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        .comment-box p {
+            margin: 0;
+            text-indent: 0;
+            color: #555;
+        }
+
+        /* ส่วนท้ายเว็บไซต์ (Footer) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 5px 0;
+            text-indent: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ส่วนหัวเว็บไซต์ (Header) -->
+    <header>
+        <div class="header-container">
+            <h1>เที่ยวเชียงใหม่</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#content">รายละเอียด</a></li>
+                    <li><a href="#comments">แสดงความคิดเห็น</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 2. ส่วนเนื้อหา (Content) -->
+        <section id="content">
+            <h2>สัมผัสเสน่ห์เมืองเหนือที่เชียงใหม่</h2>
+            
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1598974395616-52c676bc1059?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ดอยอินทนนท์">
+                <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ประตูท่าแพ">
+                <img src="https://images.unsplash.com/photo-1627915509747-d57662c1eb58?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="วัดพระธาตุดอยสุเทพ">
+            </div>
+
+            <p>
+                เชียงใหม่ เป็นจังหวัดที่มีความโดดเด่นทั้งในเรื่องของธรรมชาติ วัฒนธรรม และวิถีชีวิตที่เนิบช้า ทำให้ที่นี่กลายเป็นจุดหมายปลายทางยอดฮิตของนักท่องเที่ยวทั้งชาวไทยและชาวต่างชาติ เสน่ห์ของเชียงใหม่ไม่ได้มีแค่ภูเขาที่สวยงามเท่านั้น แต่ยังรวมถึงรอยยิ้มที่เป็นมิตรของผู้คนและสถาปัตยกรรมล้านนาที่สอดแทรกอยู่ในทุกมุมเมือง
+            </p>
+            <p>
+                นักท่องเที่ยวสามารถสัมผัสอากาศหนาวเย็นบนยอดดอยสูง ชมทะเลหมอกในยามเช้า หรือจะเลือกเดินเล่นในตัวเมืองเก่าเพื่อชมวัดวาอารามที่มีประวัติศาสตร์ยาวนานนับร้อยปี นอกจากนี้สายคาเฟ่และผู้ที่ชื่นชอบงานคราฟต์ยังสามารถใช้เวลาพักผ่อนไปกับร้านกาแฟที่ตกแต่งอย่างมีเอกลักษณ์และตลาดนัดสินค้าทำมือได้ตลอดทั้งวัน
+            </p>
+            <p>
+                การเดินทางมาเยือนเชียงใหม่ในแต่ละฤดูจะให้ความรู้สึกที่แตกต่างกัน ฤดูหนาวจะได้สัมผัสอากาศเย็นสบายและดอกไม้เมืองหนาวที่บานสะพรั่ง ในขณะที่ฤดูฝนจะให้ความรู้สึกสดชื่นจากความเขียวขจีของป่าเขา ไม่ว่าจะมาเยือนในช่วงเวลาใด เชียงใหม่ก็ยังคงมอบประสบการณ์ที่น่าประทับใจให้แก่ผู้มาเยือนเสมอ
+            </p>
+
+            <div class="highlight-list">
+                <h3>สถานที่ไฮไลท์ที่ห้ามพลาด</h3>
+                <ul>
+                    <li><strong>ดอยอินทนนท์:</strong> จุดสูงสุดในสยาม สัมผัสอากาศหนาวได้ตลอดทั้งปี</li>
+                    <li><strong>ประตูท่าแพ:</strong> แลนด์มาร์กสำคัญของเมือง ถ่ายรูปกับกำแพงอิฐเก่าแก่และฝูงนกพิราบ</li>
+                    <li><strong>วัดพระธาตุดอยสุเทพ:</strong> สิ่งศักดิ์สิทธิ์คู่บ้านคู่เมือง ชมวิวตัวเมืองเชียงใหม่จากมุมสูง</li>
+                    <li><strong>ถนนคนเดินท่าแพ:</strong> แหล่งรวมของกินพื้นเมืองและของฝากสุดชิค (เปิดทุกวันอาทิตย์)</li>
+                    <li><strong>ม่อนแจ่ม:</strong> ชมวิวธรรมชาติ ทุ่งดอกไม้ และสัมผัสวิถีชีวิตชาวไทยภูเขา</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. ระบบแสดงความคิดเห็น (Comment Section) -->
+        <section id="comments" class="comment-section">
+            <h2>แสดงความคิดเห็นของคุณ</h2>
+            
+            <form class="comment-form" onsubmit="addComment(event)">
+                <input type="text" id="userName" placeholder="ชื่อของคุณ" required>
+                <textarea id="userComment" rows="4" placeholder="พิมพ์ความคิดเห็นที่นี่..." required></textarea>
+                <button type="submit">ส่งความคิดเห็น</button>
+            </form>
+
+            <div class="comment-list" id="commentList">
+                <!-- ความคิดเห็นจะถูกเพิ่มตรงนี้ผ่าน JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. ส่วนท้ายเว็บไซต์ (Footer) -->
+    <footer>
+        <p><strong>ผู้จัดทำ:</strong> น.ส.ฐาณดา ล้อลำเลียง</p>
+        <p><strong>ชั้นเรียน:</strong> ม.3/2</p>
+        <p><strong>ปีการศึกษา:</strong> 2569</p>
+    </footer>
+
+    <!-- JavaScript สำหรับระบบความคิดเห็น -->
+    <script>
+        function addComment(event) {
+            // ป้องกันการรีเฟรชหน้าเว็บเมื่อกดปุ่ม Submit
+            event.preventDefault();
+
+            // ดึงค่าจากฟอร์ม
+            const nameInput = document.getElementById('userName');
+            const commentInput = document.getElementById('userComment');
+            
+            const name = nameInput.value;
+            const comment = commentInput.value;
+
+            // ตรวจสอบว่ากรอกข้อมูลครบหรือไม่ (ถึงแม้ HTML required จะดักไว้แล้ว)
+            if(name.trim() === '' || comment.trim() === '') return;
+
+            // สร้าง Element สำหรับความคิดเห็นใหม่
+            const commentBox = document.createElement('div');
+            commentBox.className = 'comment-box';
+            
+            const nameElement = document.createElement('h4');
+            nameElement.innerText = name;
+            
+            const textElement = document.createElement('p');
+            textElement.innerText = comment;
+
+            // นำชื่อและข้อความใส่ลงในกล่องความคิดเห็น
+            commentBox.appendChild(nameElement);
+            commentBox.appendChild(textElement);
+
+            // นำกล่องความคิดเห็นไปแสดงในหน้าเว็บ (prepend คือการแทรกไว้บนสุด)
+            const commentList = document.getElementById('commentList');
+            commentList.prepend(commentBox);
+
+            // ล้างข้อมูลในฟอร์มหลังจากส่งเสร็จ
+            nameInput.value = '';
+            commentInput.value = '';
+        }
+    </script>
+
+</body>
+</html>
